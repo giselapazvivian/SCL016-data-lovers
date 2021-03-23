@@ -1,0 +1,15 @@
+.page1{
+    display:block;
+    }
+    .page2{
+    display:none;
+    }
+
+body{
+    background-image:url("Fondo\ \(2\).jpg");
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    min-height: 100vh;
+}
