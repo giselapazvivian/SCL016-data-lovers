@@ -38,6 +38,7 @@ const button17 =document.getElementById("flyingButton")
 const buttonPage3 = () => { 
     document.querySelector(".page2").style.display = "none";
     document.querySelector(".page3").style.display = "block";
+
 }
 
 sbmt.addEventListener("click", buttonPage3)
@@ -59,7 +60,26 @@ button15.addEventListener("click", buttonPage3);
 button16.addEventListener("click", buttonPage3);
 button17.addEventListener("click", buttonPage3);
 
+//Botón volver y borrar pokemones
+const buttonBack = document.getElementById("back");
+
+const bBack= () => {
+    
+    document.querySelector(".page3").style.display = "none";
+    document.querySelector(".page2").style.display = "block";
+    document.querySelector('#search').value = "";
+    info.innerHTML = "";
+    title.innerHTML = "";
+    }
+      
+buttonBack.addEventListener("click", bBack);
 
 
+
+
+// document.getElementById('back').reset()
+// // const buttonBack = document.getElementById("back");
+
+// document.getElementById('page3').reset()
 
 // console.log(example, data);
