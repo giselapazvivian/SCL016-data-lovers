@@ -11,6 +11,7 @@ export const anotherExample = () => {
 
 
 
+
 // buscar Pokemon
 const sbmt = document.getElementById("submitButton");
 
