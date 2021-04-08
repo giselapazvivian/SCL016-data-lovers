@@ -1,20 +1,13 @@
 import { example } from './data.js';
-
 // import data from './data/pokemon/pokemon.js';
-
-
-
-
 //pasar de 1ra página a 2da página
 const buttonClick = document.getElementById("Click");
-
 const buttonPage2 = () => {
      
     document.querySelector(".page1").style.display = "none";
     document.querySelector(".page2").style.display = "block";
 }
 buttonClick.addEventListener("click", buttonPage2);
-
 //pasar de 2da página a 3ra página
 const sbmt =document.getElementById("submitButton")
 const button1 =document.getElementById("steelButton")
@@ -34,7 +27,6 @@ const button14 =document.getElementById("darkButton")
 const button15 =document.getElementById("groundButton")
 const button16 =document.getElementById("poisonButton")
 const button17 =document.getElementById("flyingButton")
-
 const buttonPage3 = () => { 
     document.querySelector(".page2").style.display = "none";
     document.querySelector(".page3").style.display = "block";
@@ -64,14 +56,14 @@ button17.addEventListener("click", buttonPage3);
 const buttonBack = document.getElementById("back");
 
 const bBack= () => {
-    
+
     document.querySelector(".page3").style.display = "none";
     document.querySelector(".page2").style.display = "block";
     document.querySelector('#search').value = "";
     info.innerHTML = "";
     title.innerHTML = "";
     }
-      
+
 buttonBack.addEventListener("click", bBack);
 
 
@@ -82,4 +74,4 @@ buttonBack.addEventListener("click", bBack);
 
 // document.getElementById('page3').reset()
 
-// console.log(example, data);
+// console.log(example, data); 

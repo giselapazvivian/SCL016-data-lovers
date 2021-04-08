@@ -1,14 +1,11 @@
 // estas funciones son de ejemplo
 import data from './data/pokemon/pokemon.js'
-
 export const example = () => {
   return 'example';
 };
-
 export const anotherExample = () => {
   return 'OMG';
 };
-
 
 
 
@@ -18,8 +15,6 @@ const sbmt = document.getElementById("submitButton");
 const searchFunction = () => {
   let searchValue = document.getElementById("search").value;
   let pokemonSearch = data.pokemon.filter(x => x.name.includes(searchValue));
-
-
   for (let i = 0; i < pokemonSearch.length; i++) {
     let images = document.createElement("img");
     images.src = pokemonSearch[i].img;
@@ -76,8 +71,7 @@ const steelPokemon = document.getElementById("steelButton");
 
     document.getElementById("title").innerHTML = buttonValue;
   }
-
-steelPokemon.addEventListener("click", typeFunction);
+  steelPokemon.addEventListener("click", typeFunction);
   waterPokemon.addEventListener("click", typeFunction);
   bugPokemon.addEventListener("click", typeFunction);
   electricPokemon.addEventListener("click", typeFunction);
@@ -94,4 +88,3 @@ steelPokemon.addEventListener("click", typeFunction);
   groundPokemon.addEventListener("click", typeFunction);
   poisonPokemon.addEventListener("click", typeFunction);
   flyingPokemon.addEventListener("click", typeFunction);
-
