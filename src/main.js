@@ -1,5 +1,5 @@
-import { example } from './data.js';
-// import data from './data/pokemon/pokemon.js';
+import { } from './data.js';
+import data from './data/pokemon/pokemon.js';
 //pasar de 1ra página a 2da página
 const buttonClick = document.getElementById("Click");
 const buttonPage2 = () => {
@@ -8,8 +8,11 @@ const buttonPage2 = () => {
     document.querySelector(".page2").style.display = "block";
 }
 buttonClick.addEventListener("click", buttonPage2);
+
 //pasar de 2da página a 3ra página
 const sbmt =document.getElementById("submitButton")
+const orderaz =document.getElementById("order1Button")
+const orderza =document.getElementById("order2Button")
 const button1 =document.getElementById("steelButton")
 const button2 =document.getElementById("waterButton")
 const button3 =document.getElementById("bugButton")
@@ -27,13 +30,16 @@ const button14 =document.getElementById("darkButton")
 const button15 =document.getElementById("groundButton")
 const button16 =document.getElementById("poisonButton")
 const button17 =document.getElementById("flyingButton")
+
 const buttonPage3 = () => { 
     document.querySelector(".page2").style.display = "none";
     document.querySelector(".page3").style.display = "block";
 
 }
 
-sbmt.addEventListener("click", buttonPage3)
+sbmt.addEventListener("click", buttonPage3);
+orderaz.addEventListener("click", buttonPage3);
+orderza.addEventListener("click", buttonPage3);
 button1.addEventListener("click", buttonPage3);
 button2.addEventListener("click", buttonPage3);
 button3.addEventListener("click", buttonPage3);
@@ -56,7 +62,8 @@ button17.addEventListener("click", buttonPage3);
 const buttonBack = document.getElementById("back");
 
 const bBack= () => {
-
+  const title =  document.getElementById("title")
+  const info =  document.getElementById("info")
     document.querySelector(".page3").style.display = "none";
     document.querySelector(".page2").style.display = "block";
     document.querySelector('#search').value = "";
@@ -65,6 +72,11 @@ const bBack= () => {
     }
 
 buttonBack.addEventListener("click", bBack);
+
+
+
+
+
 
 
 
