@@ -29,7 +29,7 @@ const searchFunction = () => {
     images.classList.add("select");
     images.setAttribute("id", "select"+i);
     images.addEventListener("click", selectPokemon);
-    // console.log(images)
+    console.log(images)
     info.appendChild(images);
     let figcaption1 = document.createElement("figcaption");
     figcaption1.innerHTML = pokemonSearch[i].num + " " + pokemonSearch[i].name;
